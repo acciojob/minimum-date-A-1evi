@@ -1,5 +1,9 @@
 function minDate(dates) {
   //write you code here
+  if (!Array.isArray(dates) || dates.length === 0) {
+    return null;
+  }
+  return dates.slice().sort()[0];
 }
 
 // Do not change the code
